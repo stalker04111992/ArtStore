@@ -64,7 +64,7 @@ public class DatabaseLogin implements LoginModule {
         Connection connection = getConnection();
         //get statement
         PreparedStatement statement = connection.prepareStatement("SELECT role FROM roles where userID=?");
-        statement.setString(1, new Integer(id).toString());
+        statement.setString(1, Integer.toString(id));
         //execute query
         return statement.executeQuery();
     }
@@ -97,8 +97,8 @@ public class DatabaseLogin implements LoginModule {
                 Callback[] calls = new Callback[2];
                 calls[0] = new NameCallback(username);
                 calls[1] = new PasswordCallback(password, true);
-                sharedState.put("javax.security.auth.login.name", username);
-                sharedState.put("javax.security.auth.login.password", password);
+                hashMap("javax.security.auth.login.name", username);
+                hashMap("javax.security.auth.login.password", password);
                 callbackHandler.handle(calls);
                 loginOk = true;
                 return true;
@@ -110,6 +110,11 @@ public class DatabaseLogin implements LoginModule {
         catch (Exception exception){
             return false;
         }
+    }
+
+    @SuppressWarnings("unchecked")
+    private void hashMap(String key, String value){
+        sharedState.put(key, value);
     }
 
     public boolean abort() throws LoginException{
