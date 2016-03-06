@@ -4,7 +4,6 @@ import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
 public class HashPassword {
-    //hashing password with SHA1
     public static String getHashPassword(String username, String password){
         try{
             SecretKeySpec key = new SecretKeySpec((username).getBytes("UTF-8"), "HmacSHA1");

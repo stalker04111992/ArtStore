@@ -21,7 +21,7 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
         <datasource-mapping>
-          <factory-entry name="Art" value="0e2d93b7-a95d-41a4-b166-c200de8b92f6" />
+          <factory-entry name="Art" value="fc20d649-59b2-4a1e-8e1b-f6d9d275547a" />
           <factory-entry name="Railway" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
