@@ -32,7 +32,6 @@ public class DatabaseLogin implements LoginModule {
     protected int id;
     protected String username;
     protected String password;
-    //protected HttpServletRequest request;
 
     public void initialize(Subject subject, CallbackHandler callbackHandler,Map sharedState, Map options){
         this.sharedState = sharedState;
