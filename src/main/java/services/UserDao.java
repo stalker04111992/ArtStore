@@ -1,8 +1,6 @@
 package services;
 
-
 import entities.User;
-
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
