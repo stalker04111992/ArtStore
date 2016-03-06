@@ -1,0 +1,167 @@
+/*@import url(http://weloveiconfonts.com/api/?family=fontawesome);*/
+
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #606468;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+a {
+    color: #eee;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input {
+    border: none;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 0;
+    -webkit-appearance: none;
+}
+
+p {
+    padding: 5px 0;
+    height: 50px;
+    line-height: 1.5em;
+}
+
+.clearfix { *zoom: 1; } /* For IE 6/7 */
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+}
+.clearfix:after { clear: both; }
+
+/* ---------- LOGIN ---------- */
+
+
+#login form span {
+    background-color: #ffffff;
+    color: #919191;
+    border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+#login form input {
+    height: 50px;
+    outline:none;
+}
+
+#login form input[type="text"], input[type="password"], input[type="email"] {
+    background-color: #ffffff;
+    color: #919191;
+    border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 230px;
+}
+
+#login form input:focus {
+    color: #5a5a5a;
+}
+
+#login form input[type="submit"] {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #7cbc19;
+    color: #eee;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    cursor:pointer;
+    width: 280px;
+}
+
+#login form input[type="submit"]:hover {
+    background-color: #7cbc19;
+}
+
+#login > p {
+    text-align: center;
+}
+
+#login > p span {
+    padding-left: 5px;
+}
+
+
+
+/* ---------- LOGIN ---------- */
+
+#login {
+    margin: 150px auto;
+    width: 302px;
+    background-color: rgba(220, 220, 220, 0.91);
+    border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+}
+
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    background-color: black;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.footer .fleft {
+    float:left;
+    color:white;
+    width:50%;
+    text-align:center;
+}
+.footer .fright {
+    float:right;
+    width:50%;
+}
+
+.containerFooter {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 1000px;
+    font-size:.8125em;
+}
+
+.wrapperFooter {
+    width:1000px;
+    overflow:hidden;
+    float: inherit;
+}
+
+a {
+    color:white;
+    outline:none;
+}
+
+#textFooter{
+    color:white;
+}
+
+a:hover{
+    text-decoration:none;
+}
